@@ -1,5 +1,6 @@
 {
   "name": "untitled-element",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "polymer": "Polymer/polymer#master"
