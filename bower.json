@@ -1,6 +1,19 @@
 {
   "name": "untitled-element",
   "private": true,
+  "version": "0.1.0",
+  "authors": ["Anonymous <anonymous@example.com>"],
+  "description": "Element providing solution to no problem in particular.",
+  "keywords": "untitled, ploymer",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://github.com/PolymerLabs/untitled-element/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "polymer": "Polymer/polymer#master"
   }
