@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "authors": ["Anonymous <anonymous@example.com>"],
   "description": "Element providing solution to no problem in particular.",
-  "keywords": "untitled, ploymer",
-  "main": "index.html",
+  "keywords": "untitled, ploymer, web-components",
+  "main": "untitled-element.html",
   "license": "MIT",
-  "homepage": "https://github.com/PolymerLabs/untitled-element/",
+  "homepage": "https://github.com/anonymous/untitled-element/",
   "ignore": [
     "**/.*",
     "node_modules",
