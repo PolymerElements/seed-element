@@ -1,20 +1,17 @@
 {
-  "name": "untitled-element",
+  "name": "seed-element",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "authors": ["Anonymous <anonymous@example.com>"],
   "description": "Element providing solution to no problem in particular.",
-  "keywords": "untitled, ploymer, web-components",
-  "main": "untitled-element.html",
+  "keywords": "seed, polymer, web-components",
+  "main": "seed-element.html",
   "license": "MIT",
-  "homepage": "https://github.com/anonymous/untitled-element/",
+  "homepage": "https://github.com/PolymerLabs/seed-element/",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "test",
-    "tests"
+    "**/.*"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#master"
+    "polymer": "Polymer/polymer#~0.2.4"
   }
 }
