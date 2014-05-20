@@ -5,18 +5,18 @@ Element providing solution to no problem in particular.
 
 ##### Example
 
-    <untitled-element></untitled-element>
+    <seed-element></seed-element>
 
-@element untitled-element
+@element seed-element
 @blurb Element providing solution to no problem in particular.
 @status alpha
-@url github.io
+@homepage username.github.io/seed-element
 -->
-<polymer-element name="untitled-element" attributes="notitle">
+<polymer-element name="seed-element" attributes="notitle">
 
   <template>
 
-    <link href="untitled-element.css" rel="stylesheet" />
+    <link rel="stylesheet" href="seed-element.css" />
 
     <content></content>
 
@@ -24,7 +24,7 @@ Element providing solution to no problem in particular.
 
   <script>
 
-    Polymer({
+    Polymer('seed-element', {
       /**
        * The `noevent` event is not actually fired from here,
        * we document it as an example of documenting events.
@@ -39,6 +39,14 @@ Element providing solution to no problem in particular.
        * @type string
        */
       notitle: '',
+      
+      /**
+       * The `aProp` is a property that does something cool.
+       * 
+       * @property aProp
+       * @type bool
+       */
+      aProp: false,
 
       ready: function() {
       },
