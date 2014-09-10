@@ -16,7 +16,7 @@
     ".bowerrc"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#>=0.4.0 <1.0.0",
-    "polymer-test-tools": "Polymer/polymer-test-tools#>=0.4.0 <1.0.0"
+    "polymer": "Polymer/polymer#^0.4.0",
+    "polymer-test-tools": "Polymer/polymer-test-tools#^0.4.0"
   }
 }
