@@ -10,13 +10,13 @@
   "license": "MIT",
   "homepage": "https://github.com/<USERNAME>/seed-element/",
   "ignore": [
-    "**/.*",
-    "test",
-    "tests",
-    ".bowerrc"
+    "/.*",
+    "/tests/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#>=0.4.0 <1.0.0",
-    "polymer-test-tools": "Polymer/polymer-test-tools#>=0.4.0 <1.0.0"
+    "polymer": "Polymer/polymer#^0.4.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^0.5.1"
   }
 }
