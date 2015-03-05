@@ -1,56 +1,77 @@
 <!--
     @license
-    Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+    Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
     This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
     The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
     The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
     Code distributed by Google as part of the polymer project is also
     subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
+
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <title>seed-element</title>
 
-  <script src="../../webcomponentsjs/webcomponents.min.js"></script>
-  <script src="../../web-component-tester/browser.js"></script>
+  <head>
 
-  <!-- Step 1: import the element to test -->
-  <link rel="import" href="../seed-element.html">
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-  <!-- You use the document as a place to set up your fixtures. -->
-  <seed-element></seed-element>
+    <title>seed-element tests</title>
 
-  <script>
-    var myEl = document.querySelector('seed-element');
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
-    suite('<seed-element>', function() {
+    <script src="../../web-component-tester/browser.js"></script>
+    <script src="../../test-fixture/test-fixture-mocha.js"></script>
 
-      test('defines the "author" property', function() {
-        assert.equal(myEl.author, 'Dimitri Glazkov');
-      });
+    <link rel="import" href="../../test-fixture/test-fixture.html">
+    <!-- Step 1: import the element to test -->
+    <link rel="import" href="../seed-element.html">
 
-      test('says hello', function() {
-        assert.equal(myEl.sayHello(), 'seed-element says, Hello World!');
+  </head>
 
-        var greetings = myEl.sayHello('greetings Earthlings');
-        assert.equal(greetings, 'seed-element says, greetings Earthlings');
-      });
+  <body>
 
-      test('fires lasers', function(done) {
-        myEl.addEventListener('seed-element-lasers-success', function(event) {
-          assert.equal(event.detail.sound, 'Pew pew pew!');
-          done();
+    <!-- Use <test-fixture> to set up fixtures -->
+    <test-fixture id="basic">
+      <template>
+        <seed-element></seed-element>
+      </template>
+    </test-fixture>
+
+    <script>
+
+      var myEl = document.querySelector('seed-element');
+
+      suite('<seed-element>', function() {
+        var myEl;
+
+        setup(function() {
+          myEl = fixture('basic');
         });
-        myEl.fireLasers();
+
+        test('defines the "author" property', function() {
+          assert.equal(myEl.author, 'Dimitri Glazkov');
+        });
+
+        test('says hello', function() {
+          assert.equal(myEl.sayHello(), 'seed-element says, Hello World!');
+
+          var greetings = myEl.sayHello('greetings Earthlings');
+          assert.equal(greetings, 'seed-element says, greetings Earthlings');
+        });
+
+        test('fires lasers', function(done) {
+          myEl.addEventListener('seed-element-lasers-success', function(event) {
+            assert.equal(event.detail.sound, 'Pew pew pew!');
+            done();
+          });
+          myEl.fireLasers();
+        });
+
       });
 
-    });
-  </script>
+    </script>
 
-</body>
+  </body>
+
 </html>

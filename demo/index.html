@@ -13,26 +13,23 @@
 
   <head>
 
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-    <title>Tests</title>
+    <title>seed-element Demo</title>
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../seed-element.html">
 
   </head>
 
   <body>
 
-    <script>
+    <p>An example of using <code>&lt;seed-element&gt;</code>:</p>
 
-      // Load and run all tests (.html, .js) as one suite:
-      WCT.loadSuites([
-        'basic-test.html',
-      ]);
-
-    </script>
+    <seed-element>
+      <h2>Hello seed-element</h2>
+    </seed-element>
 
   </body>
 
