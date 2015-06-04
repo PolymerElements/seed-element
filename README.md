@@ -2,6 +2,38 @@
 
 An element providing a starting point for your own reusable Polymer elements.
 
+![seed-element in action](demo/img.png)
+
+## Example Usage
+
+Basic
+
+```html
+<seed-element></seed-element>
+```
+
+Fancy
+
+```html
+<seed-element fancy></seed-element>
+```
+
+With a fancy author and some content
+
+```html
+<seed-element author='{"name": "Lord Meowser", "image": "http://placekitten.com/g/200/300"}' fancy>
+  <h2>Hello seed-element</h2>
+</seed-element>
+```
+
+----
+
+## How to use seed-element
+
+- Check out the [Polymer Developer Resources](https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html) and then follow the steps below to build and test your element.
+- When you're ready to publish your element to the world, remove everything
+under the above `<hr>` (`----`) and update the README above with a screenshot of your element
+in action and some great example use cases.
 
 ## Dependencies
 
