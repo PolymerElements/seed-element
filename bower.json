@@ -15,8 +15,7 @@
   "homepage": "https://github.com/<USERNAME>/seed-element/",
   "ignore": [
     "/.*",
-    "/test/",
-    "/demo/"
+    "test/"
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0"
