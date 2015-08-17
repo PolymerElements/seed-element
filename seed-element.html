@@ -30,6 +30,7 @@ Example:
     }
 
     .author img {
+      display: block;
       float: left;
       margin-right: 5px;
       max-height: 100px;
@@ -41,7 +42,7 @@ Example:
     <h1>&lt;seed-element&gt;</h1>
     <content></content>
     <p class="author">
-      <div><img src="{{author.image}}"></div>
+      <img src="{{author.image}}">
       Cheers,<br/>
       <span class="name">{{author.name}}</span>
     </p>
